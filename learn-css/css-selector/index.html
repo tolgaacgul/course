@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector</title>
+    <style>
+        /* 1. özellik secici */
+        [att]{
+            color: orange;
+        }
+        /* 2. .btn ve niteliği(attribute) [disabled] olan butona CSS uygunlandı. */
+        .btn[disabled] {
+            color: rgb(255, 203, 252);
+            background-color: blue;
+        }
+        /* 3. title atrribute deneme olana uygulandı*/
+        div[title="deneme"] {
+            background-color: orange;
+        }
+        /* 4. title içeriğinde isim içerenlere erişir. */
+        div[title~="isim"] {
+            color: rgb(0, 162, 255);
+            background: red;
+        }
+        /* 5. Burada ^= href özelliği, "apps" ile başlayan a etiketlerine eriştik. */
+        a[href ^= "apps"] {
+            color: rgb(81, 102, 81);
+        }
+        /* 6. Burada *= href özelliği "ttp" içeren a etiketlerine eriştik.*/
+        a[href *= "ttp"] {
+            color: rgb(61, 9, 9);
+            background-color: rgb(161, 151, 137);
+        }
+        /* 7. class içeriği sonunda est içeren divlere eriştik */
+        div[class$="est"] {
+          background: yellow;
+        }
+        /* 8. Burada https ile başlayan ve sonunda org olan a etiketlerine eriştik. */
+        a[href*="https"][href$="org"] {
+            color: rgb(199, 203, 235);
+            background-color: black;
+        }
+        /* 9. Torun Soy seciciler */
+        div p{
+          background-color:blue;
+        }
+        /* 10. Genel Kardeş Seçiciler (General Sibling Selectors)*/
+        ul ~ par{
+            color:orange;
+        }
+        /* 11. Bitişik Kardeş Seçiciler (Adjacent Sibling Selector) */
+        ul + pa{
+            color:green;
+            background: antiquewhite;
+        }
+        /* 12. psudo */
+        kap>a#google:link {
+            color: rgb(219, 194, 194);
+            text-decoration: none;
+            background-color: rgb(56, 47, 35);
+            padding: 10px;
+        }
+        /* 15. ilk kelimeye css*/
+        article > p::first-letter {
+            font-size: 40px;
+            color: orange;
+        }
+        /* 16.  ::first-line  */
+
+
+        /* 17.::before belirlenenn etiketin önune css uygulanır */
+        main > p::before {
+            content: "selam ";
+            color: rgb(255, 183, 58);
+        }
+
+        /* 18. ::after belirlenen etiketin sonuna css */
+
+        /* Clear Konusu */
+        .box{
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+        .bg-red{
+            background-color: red;
+        }
+        .bg-blue{
+            background-color: blue;
+        }
+        .clear{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML CSS Selector</h1>
+    
+<!-- 1. -->
+    <button att="">att</button>
+    <ul>
+      <li att="html">HTML</li>
+      <li att="css">CSS</li>
+    </ul>
+<hr>
+<!-- 2 -->
+    <button class="btn" disabled="disabled">Submit</button>
+<hr>    
+<!-- 3. -->
+      <div title="Deneme">Lorem, ipsum dolor.</div>
+      <div title="deneme">deneme deneme deneme.</div>
+      <div name="denemefalan">Lorem, ipsum.</div>
+<hr>
+<!-- 4. -->
+  <div title="isim">Lorem, ipsum dolor.</div>
+  <div title="isimler">Lorem, ipsum dolor.</div>
+  <div title="isim ve şehirler">Lorem, ipsum dolor.</div>
+<hr>
+<!-- 5.  -->
+  <a href="app.google.com/">GOOGLE</a>
+  <a href="appso.github.com/">appso.github</a>
+  <a href="app.github.com/">GİTHUB</a>
+  <a href="apps.github.com/">app.GİTHUN</a>
+<hr>
+<!-- 6.  -->
+  <a href="ahttps://www.google.com/">google</a>
+  <a href="htps://github.com/">github</a>
+  <a href="http://github.com/">github</a>
+<hr>
+<!-- 7. -->
+<div>
+    <div class="bir_est">1. Lorem, ipsum dolor.</div>
+    <div class="iki-test">2. Lorem, ipsum dolor.</div> 
+    <div class="uc esti">3. Lorem, ipsum dolor.</div>
+    <div class="dor-testi">4. Lorem, ipsum dolor.</div>
+    <div class="bestest">5. Lorem, ipsum dolor.</div>
+</div>
+<hr>
+<!-- 8.  -->
+<a href="https://www.google.com/">google.com</a>
+<a href="https://reactjs.org">react.org</a>
+<a href="https://css-tricks.com/">css.com</a>
+<hr>
+<hr>
+<hr>
+<!-- 9.  -->
+<div>
+    <p>Bu p etiketi arka planı mavi renk</p>
+    <ul>
+      <li>
+        <p>Bu p etiketi arka planı mavi renk</p>
+      </li>
+    </ul>
+    <p>Bu p etiketi arka planı mavi renk</p>
+  </div>
+<hr>
+<hr>
+<hr>
+<!-- 10. Genel Kardeş Seçiciler (General Sibling Selectors) -->
+  <div>
+    <par>Par Tagi çalışmadı</par>
+    <ul>
+      <li>
+        <par>par tagi Lorem, ipsum dolor.</par>
+      </li>
+    </ul>
+    <par>Par Tagi</par>
+    <h3>h3 tagi Lorem, ipsum dolor.</h3>
+    <par>Bu par etiketi turuncu renkte</par>
+  </div>
+<hr>
+<hr>
+<hr>
+<!-- 11.Bitişik Kardeş Seçiciler (Adjacent Sibling Selector)  -->
+  <div>
+    <pa>Lorem, ipsum.</pa>
+    <ul>
+      <li>
+        <pa>pa tagi</pa>
+      </li>
+    </ul>
+    <pa>Bu p etiketinin yazı rengi yeşil</pa><br>
+    <pa>Bu p etiketinin yazı rengi yeşil</pa>
+
+  </div>
+<hr>
+<hr>
+<!-- 12. PSEUDO -->
+
+<kap>
+    <a id="google" href="www.google.com/">Google Sitesi</a>
+</kap>
+<hr>
+<hr>
+<hr>
+<!-- 15. -->
+    <article>
+        <p>pq <strong>''::first-letter''</strong> ile ilk kelimeye css</p>
+    </article>
+<hr>
+<hr>
+<hr>
+<!-- 17.  -->
+
+<main>
+    <p>Lorem ipsum dolor sit.</p>
+</main>
+ <br>
+ <hr>
+
+<div class="box bg-red"></div>
+<div class="box bg-blue"></div>
+<div class="clear"></div>
+<h3>clear konusu</h3>
+
+
+</body>
+</html>
