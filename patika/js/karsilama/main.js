@@ -17,7 +17,8 @@ function showTime(){
     let dayName = fncGunName(tarih.getDay());
 
     let istenen = `${saat} ${dayName}`;
-    writeToDom("#myClock",istenen)
+    writeToDom("#myClock",istenen);
+    setInterval(showTime, 1000);
 }// Doma bilgi yazdırmak için
 function writeToDom(idOrClass, info){
     let dom = document.querySelector(`${idOrClass}`)
