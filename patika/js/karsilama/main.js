@@ -13,12 +13,18 @@ function fncName(){
 // İstenen Tam Saat Gun
 function showTime(){
     let tarih = new Date();
-    let saat = tarih.getHours() + ":" + tarih.getMinutes() +":"+ tarih.getSeconds();
-    let dayName = fncGunName(tarih.getDay());
+    let saat = twoDigits(tarih.getHours())
+    let dakika = twoDigits(tarih.getMinutes())
+    let saniye = twoDigits(tarih.getSeconds())
+    let dayName = fncGunName(tarih.getDay())
 
-    let istenen = `${saat} ${dayName}`;
-    writeToDom("#myClock",istenen);
+    // console.log("1." + dayName)
+    // console.log("2." + tarih.getDay())
+
+    let istenenSaat = `${saat}:${dakika}:${saniye} ${dayName}`;
+    writeToDom("#myClock",istenenSaat);
     setInterval(showTime, 1000);
+
 }// Doma bilgi yazdırmak için
 function writeToDom(idOrClass, info){
     let dom = document.querySelector(`${idOrClass}`)
@@ -45,10 +51,19 @@ function fncGunName(gunSayi){
         case 6:
             return "Cumartesi"
             break;
-        case 7:
+        case 0:
             return "Pazar"
             break;
         default:
             return "Gün Hatası"
+    }
+}
+// çift hane
+function twoDigits(a){
+    let x = a.toString()
+    if(x.length<2){
+        return "0"+x;
+    }else{
+        return x
     }
 }
