@@ -1,9 +1,5 @@
 fncName()
 showTime();
-
-
-
-
 // isim bilgisi alınır
 function fncName(){
     let myName = prompt("Adını Gir");
@@ -17,15 +13,23 @@ function showTime(){
     let dakika = twoDigits(tarih.getMinutes())
     let saniye = twoDigits(tarih.getSeconds())
     let dayName = fncGunName(tarih.getDay())
-
     // console.log("1." + dayName)
     // console.log("2." + tarih.getDay())
-
     let istenenSaat = `${saat}:${dakika}:${saniye} ${dayName}`;
     writeToDom("#myClock",istenenSaat);
     setInterval(showTime, 1000);
 
-}// Doma bilgi yazdırmak için
+}
+// çift hane
+function twoDigits(a){
+    let x = a.toString()
+    if(x.length<2){
+        return "0"+x;
+    }else{
+        return x
+    }
+}
+// Doma bilgi yazdırmak için
 function writeToDom(idOrClass, info){
     let dom = document.querySelector(`${idOrClass}`)
     dom.innerHTML = info;
@@ -56,14 +60,5 @@ function fncGunName(gunSayi){
             break;
         default:
             return "Gün Hatası"
-    }
-}
-// çift hane
-function twoDigits(a){
-    let x = a.toString()
-    if(x.length<2){
-        return "0"+x;
-    }else{
-        return x
     }
 }
