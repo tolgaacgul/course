@@ -42,5 +42,11 @@ public class Main {
         }
         System.out.println("EKOK: " + ekok);
 
+        int whatEKOK = (n1*n2)/ebob;
+        if(whatEKOK == ekok){
+            System.out.println("EKOK sağlaması DOĞRU");
+        }else{
+            System.out.println("EKOK sağlamasında HATA var!");
+        }
     }
 }
