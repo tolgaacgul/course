@@ -44,5 +44,14 @@ public class Main {
             }
         } while(number != 0);
 
+        /*
+        Çıkış için [0]
+        Bir Sayı Gir: 496
+        -------------------------------
+        total: 496 = 496 :number
+        mükemmel sayıdır.
+        -------------------------------
+
+         */
     }
 }
