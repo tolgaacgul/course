@@ -9,26 +9,29 @@ Her çıkarma işlemi sırasında ekrana son değeri yazdırın. Sayı negatif v
 tekrar 5 ekleyin. Yine her ekleme işleminde sayının son değerini ekrana yazdırın.
  */
     static void pattern(int number){
-        int i = number;
-        int firstNumber = 9;
-        // 9 4 -1
-        if (i > 0){
-            System.out.print(i + " ");
-            pattern(i-5);
-        }if (i <= 0){
-            System.out.print(i + " ");
-            pattern(i, firstNumber);
-        }
+        pattern(number, number, false);
     }
-    static void pattern(int i, int firstNumber){
-        if (i == firstNumber){
-            System.out.print(i + " ");
-            //4 9
-        } else if(i < firstNumber) {
-            i += 5;
-            System.out.print(i + " ");
-            if(i != firstNumber){
-                pattern(i, firstNumber);
+
+    static void pattern(int number, int firstNumber, boolean eksiTamamMi){
+        int i = number;
+
+        if(!eksiTamamMi){
+            // 6 1 -4
+            if (i > 0){
+                System.out.print(i + " ");
+                pattern(i-5, firstNumber, eksiTamamMi);
+            }if (i <= 0){
+                eksiTamamMi = true;
+                System.out.print(i + " ");
+                pattern(i, firstNumber,eksiTamamMi);
+            }
+        }else{
+            if(i < firstNumber) {
+                i += 5;
+                System.out.print(i + " ");
+                if(i != firstNumber){
+                    pattern(i, firstNumber, eksiTamamMi);
+                }
             }
         }
     }
