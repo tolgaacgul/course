@@ -12,25 +12,25 @@ tekrar 5 ekleyin. Yine her ekleme işleminde sayının son değerini ekrana yazd
         pattern(number, number, false);
     }
 
-    static void pattern(int number, int firstNumber, boolean eksiTamamMi){
+    static void pattern(int number, int firstNumber, boolean isNegative){
         int i = number;
 
-        if(!eksiTamamMi){
+        if(!isNegative){
             // 6 1 -4
             if (i > 0){
                 System.out.print(i + " ");
-                pattern(i-5, firstNumber, eksiTamamMi);
+                pattern(i-5, firstNumber, isNegative);
             }if (i <= 0){
-                eksiTamamMi = true;
+                isNegative = true;
                 System.out.print(i + " ");
-                pattern(i, firstNumber,eksiTamamMi);
+                pattern(i, firstNumber,isNegative);
             }
         }else{
             if(i < firstNumber) {
                 i += 5;
                 System.out.print(i + " ");
                 if(i != firstNumber){
-                    pattern(i, firstNumber, eksiTamamMi);
+                    pattern(i, firstNumber, isNegative);
                 }
             }
         }
