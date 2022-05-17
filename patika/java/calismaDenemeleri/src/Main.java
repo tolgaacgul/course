@@ -57,6 +57,11 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
+        Test testNesnesi = new Test(9);
+        testNesnesi.testMetot(9);
+
+
         /*
         int i = 8;
         if(i==10){
@@ -224,10 +229,12 @@ public class Main {
         carp(12);
         System.out.println(carp(2,3));
 
-         */
-
         System.out.println("Basamak toplami: "+basamaklarToplami(45612));
         recursiveMethod(4);
+
+         */
+
+
 
 
     }
