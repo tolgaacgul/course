@@ -1,3 +1,9 @@
+import Heros.Archer;
+import Heros.Heroes;
+import Heros.Knight;
+import Heros.Samurai;
+import java.util.Scanner;
+
 public class Player {
 
     Inventory inventory = new Inventory();
@@ -6,17 +12,49 @@ public class Player {
     private int money;
     private String characterName;
     private String name;
+    private Scanner scn = new Scanner(System.in);
 
     // ### methots
     public Player(String name) {
         this.name = name;
     }
 
-    public void selectChar(){
-        System.out.print("Karakter Seçiniz: ");
+    // Karakter seçimi
+    public void selectCharacter(Heroes[] heroes){
+        // kahraman seçimi henuz yapılmadı
+        boolean dontSelectHero = true;
+        // Kahramanı seçmek için
+        do{
+            System.out.println("----------------------- Karakter Seçimi -----------------------");
+            for (Heroes hero : heroes){
+                System.out.println("id: [" + hero.getId() + "]\tKarakter: " + hero.getName() + "\tSağlık: " + hero.getHealth() + "\tHasar: " + hero.getDamage() + "\tPara: " + hero.getMoney() );
+            }
+            System.out.println("---------------------------------------------------------------");
+            System.out.print("Kahraman Karakterini Seç: ");
+            int selectHeroId = scn.nextInt();
+            for (Heroes hero : heroes){
+                if(hero.getId() == selectHeroId){
+                    this.setCharacterName(hero.getName());
+                    this.setDamage(hero.getDamage());
+                    this.setHealth(hero.getHealth());
+                    this.setMoney(hero.getMoney());
+
+                    dontSelectHero = false;
+                    System.out.println("Karakter Seçiminiz: " + this.getCharacterName() +
+                            "\n" + this.getCharacterName() + " ile adadan kurtulabilecek misin " + this.getName() + ", bakalım? ");
+                }
+            }
+        }while (dontSelectHero);
     }
 
-    // ## getter-setter
+
+
+
+
+
+
+
+    // ###------------------ getter-setter ------------------###
     public Inventory getInventory() {
         return inventory;
     }
