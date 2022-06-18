@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/deneme.iml" filepath="$PROJECT_DIR$/deneme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/patikaApp.iml" filepath="$PROJECT_DIR$/patikaApp.iml" />
     </modules>
   </component>
 </project>
