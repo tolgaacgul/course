@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TolgaAcgul</string>
+    <string name="pizzaBaslik">Beef Chees</string>
+    <string name="peynir">peynir</string>
+    <string name="biberYazi">Pepper</string>
+    <string name="teslimatSuresi">50</string>
+    <string name="zeytinYazi">Olive</string>
+    <string name="teslimatBaslik">Delivery</string>
+    <string name="pizzaAciklama">Meat Lover, Come Look Drink a Tea</string>
+    <string name="fiyatYazi">5$</string>
+    <string name="butonYazi">Gönder</string>
+</resources>
