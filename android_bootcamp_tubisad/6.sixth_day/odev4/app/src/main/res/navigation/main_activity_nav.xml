@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/anaSayfaFragment">
+
+    <fragment
+        android:id="@+id/anaSayfaFragment"
+        android:name="com.example.odev4.AnaSayfaFragment"
+        android:label="anasayfa_fragment"
+        tools:layout="@layout/anasayfa_fragment" >
+        <action
+            android:id="@+id/GoHomeToA"
+            app:destination="@id/AFrangment" />
+        <action
+            android:id="@+id/GoHomeToX"
+            app:destination="@id/XFrangment" />
+    </fragment>
+    <fragment
+        android:id="@+id/AFrangment"
+        android:name="com.example.odev4.AFragment"
+        android:label="a_frangment"
+        tools:layout="@layout/a_fragment" >
+        <action
+            android:id="@+id/GoAToB"
+            app:destination="@id/BFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/BFragment"
+        android:name="com.example.odev4.BFragment"
+        android:label="b_fragment"
+        tools:layout="@layout/b_fragment" >
+        <action
+            android:id="@+id/GoBToY"
+            app:destination="@id/YFrangment" />
+    </fragment>
+    <fragment
+        android:id="@+id/XFrangment"
+        android:name="com.example.odev4.XFragment"
+        android:label="x_frangment"
+        tools:layout="@layout/x_fragment" >
+        <action
+            android:id="@+id/GoXToY"
+            app:destination="@id/YFrangment" />
+    </fragment>
+    <fragment
+        android:id="@+id/YFrangment"
+        android:name="com.example.odev4.YFragment"
+        android:label="y_frangment"
+        tools:layout="@layout/y_fragment" />
+</navigation>

@@ -4,25 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SayfaAFrangment" >
+    tools:context=".XFragment" >
 
     <Button
-        android:id="@+id/btnAToB"
+        android:id="@+id/btnXToY"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
         android:layout_marginBottom="65dp"
-        android:text="B ye Git"
+        android:text="Y ye Git"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="71dp"
-        android:text="Ana Sayfa"
+        android:text="X sayfasi"
+        android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/btnToA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

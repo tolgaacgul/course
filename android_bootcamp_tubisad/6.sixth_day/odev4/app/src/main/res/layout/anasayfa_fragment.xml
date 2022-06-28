@@ -12,8 +12,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="71dp"
         android:text="Ana Sayfa"
+        android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/btnToA"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
@@ -25,8 +27,9 @@
         android:text="A ya Git"
         app:layout_constraintBottom_toTopOf="@+id/btnToX"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/btnToX"
@@ -37,5 +40,7 @@
         android:text="X ye Git"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnToA" />
 </androidx.constraintlayout.widget.ConstraintLayout>

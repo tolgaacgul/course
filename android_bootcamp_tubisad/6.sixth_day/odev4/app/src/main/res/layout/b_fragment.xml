@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AnasayfaBFragment" >
+    tools:context=".BFragment" >
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="71dp"
-        android:text="Ana Sayfa"
+        android:text="B Sayfası"
+        android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/btnToA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
