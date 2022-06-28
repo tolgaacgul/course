@@ -6,6 +6,10 @@ plugins {
 android {
     compileSdk 32
 
+    buildFeature {
+        viewBinding true;
+    }
+
     defaultConfig {
         applicationId "com.example.widgetskullanimi"
         minSdk 21
