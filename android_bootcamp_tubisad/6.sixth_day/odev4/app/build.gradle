@@ -36,6 +36,9 @@ android {
     }
 }
 
+// veri taşıma işi için gereklicomponent
+apply plugin: "androidx.navigation.safeargs.kotlin"
+
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.7.0'

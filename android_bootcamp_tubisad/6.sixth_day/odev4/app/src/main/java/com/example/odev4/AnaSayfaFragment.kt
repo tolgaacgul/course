@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
 import com.example.odev4.databinding.AnasayfaFragmentBinding
-import com.google.android.material.snackbar.Snackbar
 
 class AnaSayfaFragment : Fragment() {
     private lateinit var tasarim:AnasayfaFragmentBinding
@@ -15,13 +14,16 @@ class AnaSayfaFragment : Fragment() {
         tasarim = AnasayfaFragmentBinding.inflate(inflater, container, false)
 
         tasarim.btnToA.setOnClickListener {
+            val kisi = Kisiler("TolgaAcgul", 34,1.98F, true)
+            val gecis = AnaSayfaFragmentDirections.goHomeToA(ad ="Tolga",yas = 29,boy = 1.74F,evliMi = true, nesne = kisi)
+
             // bilgi ekranı
             //Snackbar.make(it, "Merhaba TOGA", Snackbar.LENGTH_SHORT).show()
-            Navigation.findNavController(tasarim.btnToA).navigate(R.id.GoHomeToA)
+            Navigation.findNavController(it).navigate(gecis)
         }
 
         tasarim.btnToX.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.GoHomeToX);
+            Navigation.findNavController(tasarim.btnToX).navigate(R.id.GoHomeToX);
         }
 
 
