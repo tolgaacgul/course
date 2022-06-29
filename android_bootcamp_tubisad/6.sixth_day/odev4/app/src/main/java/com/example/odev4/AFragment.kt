@@ -38,7 +38,7 @@ class AFragment : Fragment() {
         Log.e("gelen Nesne Evlimi: ", nesnem.evliMi.toString())
 
 
-        tasarim.txtInfo.setText(nesnem.ad , " ", nesnem.yas, "nda bir delikanlı", nesnem.boy, " metre uzunluğuyla ", nesnem.evliMi, " olarak girş yaptı")
+        tasarim.txtInfo.setText(nesnem.ad, nesnem.yas)
 
         tasarim.btnAToB.setOnClickListener {
             Navigation.findNavController(it).navigate(R.id.GoAToB)

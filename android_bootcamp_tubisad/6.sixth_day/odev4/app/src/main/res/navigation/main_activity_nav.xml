@@ -25,7 +25,9 @@
         tools:layout="@layout/a_fragment" >
         <action
             android:id="@+id/GoAToB"
-            app:destination="@id/BFragment" />
+            app:destination="@id/BFragment"
+            app:popUpTo="@id/AFrangment"
+            app:popUpToInclusive="true" />
         <argument
             android:name="ad"
             app:argType="string"
@@ -53,7 +55,9 @@
         tools:layout="@layout/b_fragment" >
         <action
             android:id="@+id/GoBToY"
-            app:destination="@id/YFrangment" />
+            app:destination="@id/YFrangment"
+            app:popUpTo="@id/BFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/XFrangment"
