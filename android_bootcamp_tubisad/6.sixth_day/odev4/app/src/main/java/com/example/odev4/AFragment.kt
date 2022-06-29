@@ -38,7 +38,7 @@ class AFragment : Fragment() {
         Log.e("gelen Nesne Evlimi: ", nesnem.evliMi.toString())
 
 
-        tasarim.txtInfo.setText(nesnem.ad, nesnem.yas)
+        tasarim.txtInfo.setText(nesnem.ad)
 
         tasarim.btnAToB.setOnClickListener {
             Navigation.findNavController(it).navigate(R.id.GoAToB)
