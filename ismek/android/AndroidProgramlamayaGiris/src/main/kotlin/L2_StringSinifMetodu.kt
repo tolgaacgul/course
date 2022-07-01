@@ -1,4 +1,4 @@
-fun main(){
+fun main(args:Array<String>){
 
     // length
     val str:String = "tOlGa"
@@ -26,6 +26,13 @@ fun main(){
     println("$str 'de lG varmi: ${str.contains("lG")}")
     println("$str 'de sl varmi: ${str.contains("sl")}")
 
-    //1.55 dk
+    // startsWith metodu kelimenin ilgili kelime ile başlayıp başlamadığını kontrol etmek için kullanıllır.
+    println("$sifre kelimesi asd ile başlıor mu: ${sifre.startsWith("Tol")}")
+
+    // 1.55dk
+
+
+
+
 
 }

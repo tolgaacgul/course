@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5c59c7f1-7990-4b65-929f-c843af2d5456" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/AndroidProgramlamayaGiris/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidProgramlamayaGiris/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidProgramlamayaGiris/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidProgramlamayaGiris/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidProgramlamayaGiris/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidProgramlamayaGiris/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidProgramlamayaGiris/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidProgramlamayaGiris/AndroidProgramlamayaGiris.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidProgramlamayaGiris/src/main/kotlin/L1_Degiskenler.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidProgramlamayaGiris/src/main/kotlin/L2_StringSinifMetodu.kt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2BL2GIrxycRVJ1ppc42sEXitu1d" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Kotlin.L6_FunctionKt">
+    <configuration name="L1_DegiskenlerKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="L1_DegiskenlerKt" />
+      <module name="AndroidProgramlamayaGiris" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="L3_TurDonusumleriKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="L3_TurDonusumleriKt" />
+      <module name="AndroidProgramlamayaGiris" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="L4_ExceptionTryCatchKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="L4_ExceptionTryCatchKt" />
+      <module name="AndroidProgramlamayaGiris" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="L5_KosulYapisiKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="L5_KosulYapisiKt" />
+      <module name="AndroidProgramlamayaGiris" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="L6_FunctionKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="L6_FunctionKt" />
+      <module name="AndroidProgramlamayaGiris" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.L6_FunctionKt" />
+        <item itemvalue="Kotlin.L5_KosulYapisiKt" />
+        <item itemvalue="Kotlin.L4_ExceptionTryCatchKt" />
+        <item itemvalue="Kotlin.L3_TurDonusumleriKt" />
+        <item itemvalue="Kotlin.L1_DegiskenlerKt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5c59c7f1-7990-4b65-929f-c843af2d5456" name="Changes" comment="" />
+      <created>1656670952007</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656670952007</updated>
+    </task>
+    <servers />
+  </component>
+</project>
