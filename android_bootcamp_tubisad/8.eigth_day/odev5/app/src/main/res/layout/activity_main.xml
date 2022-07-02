@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="4"
-        app:layout_constraintEnd_toStartOf="@+id/btnPossitiveOrNegative"
+        app:layout_constraintEnd_toStartOf="@+id/btnDel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn7" />
 
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:text="3"
         app:layout_constraintEnd_toStartOf="@+id/btnDivide"
-        app:layout_constraintStart_toEndOf="@+id/btnPossitiveOrNegative"
+        app:layout_constraintStart_toEndOf="@+id/btnDel"
         app:layout_constraintTop_toBottomOf="@+id/btn6" />
 
     <Button
@@ -48,7 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="1"
-        app:layout_constraintEnd_toStartOf="@+id/btnPossitiveOrNegative"
+        app:layout_constraintEnd_toStartOf="@+id/btnDel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn4" />
 
@@ -77,7 +77,7 @@
         android:layout_height="wrap_content"
         android:text="6"
         app:layout_constraintEnd_toStartOf="@+id/btnDivide"
-        app:layout_constraintStart_toEndOf="@+id/btnPossitiveOrNegative"
+        app:layout_constraintStart_toEndOf="@+id/btnDel"
         app:layout_constraintTop_toBottomOf="@+id/btn9" />
 
     <Button
@@ -87,14 +87,14 @@
         android:text="8"
         app:layout_constraintEnd_toStartOf="@+id/btnPercent"
         app:layout_constraintStart_toEndOf="@+id/btnAC"
-        app:layout_constraintTop_toBottomOf="@+id/btnPossitiveOrNegative" />
+        app:layout_constraintTop_toBottomOf="@+id/btnDel" />
 
     <Button
         android:id="@+id/btn7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="7"
-        app:layout_constraintEnd_toStartOf="@+id/btnPossitiveOrNegative"
+        app:layout_constraintEnd_toStartOf="@+id/btnDel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnAC" />
 
@@ -104,7 +104,7 @@
         android:layout_height="wrap_content"
         android:text="9"
         app:layout_constraintEnd_toStartOf="@+id/btnDivide"
-        app:layout_constraintStart_toEndOf="@+id/btnPossitiveOrNegative"
+        app:layout_constraintStart_toEndOf="@+id/btnDel"
         app:layout_constraintTop_toBottomOf="@+id/btnPercent" />
 
     <Button
@@ -122,12 +122,12 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/baloo_tamma"
-        android:text="3,143596"
         android:textAlignment="textEnd"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/txtIslem" />
 
     <Button
         android:id="@+id/btnPercent"
@@ -136,7 +136,7 @@
         android:text="%"
         app:layout_constraintEnd_toStartOf="@+id/btnDivide"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnPossitiveOrNegative"
+        app:layout_constraintStart_toEndOf="@+id/btnDel"
         app:layout_constraintTop_toBottomOf="@+id/sonuc" />
 
     <Button
@@ -144,16 +144,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="AC"
-        app:layout_constraintEnd_toStartOf="@+id/btnPossitiveOrNegative"
+        app:layout_constraintEnd_toStartOf="@+id/btnDel"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sonuc" />
 
     <Button
-        android:id="@+id/btnPossitiveOrNegative"
+        android:id="@+id/btnDel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="+/-"
+        android:text="DEL"
+        app:iconTint="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/btnPercent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnAC"
@@ -198,4 +199,13 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnComma"
         app:layout_constraintTop_toBottomOf="@+id/btnPossitive" />
+
+    <TextView
+        android:id="@+id/txtIslem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,60 +12,83 @@ class MainActivity : AppCompatActivity() {
         setContentView(vw.root)
 
         var total:Long = 0;
-        var nowNumber:Long = 0;
-        var totalStr:String = ""
         var nowNumberStr:String = ""
 
+        //Eşitleme işlemi
+        vw.btnEquals.setOnClickListener {
+            if(!nowNumberStr.equals("")){
+                val nums: List<String> = nowNumberStr.split("+")
+                for (num in nums){
+                    total += num.toLong()
+                }
+                vw.sonuc.setText(total.toString())
+                nowNumberStr = "";
+                vw.txtIslem.setText(nowNumberStr)
+                total = 0
+            }
+        }
+        // sıfırlama
         vw.btnAC.setOnClickListener {
             vw.sonuc.setText("").toString()
+            vw.txtIslem.setText("").toString()
+            nowNumberStr = ""
+            total = 0
         }
+        // silme işlemi
+        vw.btnDel.setOnClickListener {
+            nowNumberStr = vw.txtIslem.text.toString().dropLast(1)
+            vw.txtIslem.setText(nowNumberStr).toString()
+        }
+        // + ekleme işlemi
+        vw.btnPossitive.setOnClickListener {
+            if(nowNumberStr != ""){
+                nowNumberStr += "+"
+                vw.txtIslem.setText("$nowNumberStr").toString()
+            }else if(nowNumberStr == ""){
+                nowNumberStr = vw.sonuc.text.toString() + "+"
+                vw.txtIslem.setText("$nowNumberStr").toString()
+            }
+        }
+        // ------------- Sayı Tuş Takımı ---------------
         vw.btn0.setOnClickListener {
-            vw.sonuc.setText("${vw.sonuc.text}0").toString()
+            vw.txtIslem.setText("${vw.txtIslem.text}0").toString()
             nowNumberStr += "0"
         }
         vw.btn1.setOnClickListener {
-            vw.sonuc.setText("${vw.sonuc.text}1").toString()
+            vw.txtIslem.setText("${vw.txtIslem.text}1").toString()
             nowNumberStr += "1"
         }
         vw.btn2.setOnClickListener {
-            vw.sonuc.setText("${vw.sonuc.text}2").toString()
+            vw.txtIslem.setText("${vw.txtIslem.text}2").toString()
             nowNumberStr += "2"
         }
         vw.btn3.setOnClickListener {
-            vw.sonuc.setText("${vw.sonuc.text}3").toString()
+            vw.txtIslem.setText("${vw.txtIslem.text}3").toString()
             nowNumberStr += "3"
         }
         vw.btn4.setOnClickListener {
-            vw.sonuc.setText("${vw.sonuc.text}4").toString()
+            vw.txtIslem.setText("${vw.txtIslem.text}4").toString()
             nowNumberStr += "4"
         }
         vw.btn5.setOnClickListener {
-            vw.sonuc.setText("${vw.sonuc.text}5").toString()
+            vw.txtIslem.setText("${vw.txtIslem.text}5").toString()
             nowNumberStr += "5"
         }
         vw.btn6.setOnClickListener {
-            vw.sonuc.setText("${vw.sonuc.text}6").toString()
+            vw.txtIslem.setText("${vw.txtIslem.text}6").toString()
             nowNumberStr += "6"
         }
         vw.btn7.setOnClickListener {
-            vw.sonuc.setText("${vw.sonuc.text}7").toString()
+            vw.txtIslem.setText("${vw.txtIslem.text}7").toString()
             nowNumberStr += "7"
         }
         vw.btn8.setOnClickListener {
-            vw.sonuc.setText("${vw.sonuc.text}8").toString()
+            vw.txtIslem.setText("${vw.txtIslem.text}8").toString()
             nowNumberStr += "8"
         }
         vw.btn9.setOnClickListener {
-            vw.sonuc.setText("${vw.sonuc.text}9").toString()
+            vw.txtIslem.setText("${vw.txtIslem.text}9").toString()
             nowNumberStr += "9"
         }
-        vw.btnPossitive.setOnClickListener {
-            println("nowNumberStr:  $nowNumberStr")
-
-        }
-        vw.btnEquals.setOnClickListener {
-
-        }
-
     }
 }
