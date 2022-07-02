@@ -16,6 +16,10 @@ class MainActivity : AppCompatActivity() {
 
         //Eşitleme işlemi
         vw.btnEquals.setOnClickListener {
+            if (nowNumberStr.endsWith("+")){
+                println("Son değer +")
+                nowNumberStr = nowNumberStr.dropLast(1)
+            }
             if(!nowNumberStr.equals("")){
                 val nums: List<String> = nowNumberStr.split("+")
                 for (num in nums){
