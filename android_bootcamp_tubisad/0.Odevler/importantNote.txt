@@ -1,0 +1,4 @@
+1- lateinit ifadesinden sonra var kullanılır. Çünkü daha sonra değer atanacaktır. Val yalnızca sabitler ve sonradan değiştirilmeyecek ifadeler için kullanılır
+ORN: lateinit var ad: String ;
+
+2- 
