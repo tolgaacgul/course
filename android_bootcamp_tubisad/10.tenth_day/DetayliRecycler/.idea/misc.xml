@@ -3,10 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.28125" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.15716857910156246" />
         <entry key="app/src/main/res/layout/card_tasarim.xml" value="0.48348439534505205" />
-        <entry key="app/src/main/res/layout/fragment_anasayfa.xml" value="0.2953125" />
-        <entry key="app/src/main/res/layout/fragment_detay.xml" value="0.2953125" />
+        <entry key="app/src/main/res/layout/fragment_anasayfa.xml" value="0.16538461538461538" />
+        <entry key="app/src/main/res/layout/fragment_detay.xml" value="0.22" />
         <entry key="app/src/main/res/menu/popup_menu.xml" value="0.18651315789473685" />
       </map>
     </option>
