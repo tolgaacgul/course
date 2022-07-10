@@ -1,9 +1,8 @@
 package com.unispry.kotlindersi
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 
-class MainActivity : AppCompatActivity() {
+
+class MainActivity{
 
     //burada nullable oluşturmak farklılaşabilir
     var str1:String? = null // normal yapı. bu sekil nullable olabileceği belirtildi
@@ -14,10 +13,12 @@ class MainActivity : AppCompatActivity() {
     // lateinit var sayi:Int  //Int,Boolean,Double,Float vb gibi primitive ifadeler de lateinit kullanılamaz
     var sayi:Int = 0
 
+    /*
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         str2 = "Merhaba ben daha sonra başlatıldım."
     }
+    */
 }
