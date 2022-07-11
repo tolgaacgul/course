@@ -5,3 +5,7 @@ ORN: lateinit var ad: String ;
 Hashset kafasına göre sıraya dizer
 
 3- HashMap yapısı key-value ilişkisi vardır. Hash-map arraylsit ten farklı olarak farklı türleri de ekleyebiliriz.
+
+4- XML içerisinde isek res klasörüne .@. İle erişilir. Eğer Kotlin klasörü içerisinden ise .R. ile eişilir.
+
+5- drawable ve drawable-v24 arasındaki fark -> drawable-v24 api 24 ve sonrası için geçerlidir.

@@ -7,4 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-</resources>
+
+    <!-- Kendi renklerimiz -->
+    <color name="anaRenk">#292929</color>
+    <color name="anaRenk2">#5B7876</color>
+    <color name="yaziRengi">#ffffff</color>
+    <color name="yaziRengi2">#F2E6B6</color>
+-</resources>
