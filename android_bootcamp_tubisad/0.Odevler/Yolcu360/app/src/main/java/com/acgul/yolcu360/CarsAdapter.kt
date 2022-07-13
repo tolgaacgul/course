@@ -28,15 +28,18 @@ class CarsAdapter(var mContext:Context, var carList:List<Cars>): RecyclerView.Ad
           val t = holder.tasarim
           t.imageViewRentalCar.setImageResource(
                mContext.resources.getIdentifier(car.image_name, "drawable", mContext.packageName))
+          t.imageViewCompany.setImageResource(
+               mContext.resources.getIdentifier(car.company_name, "drawable", mContext.packageName))
           t.textViewBrand.text = car.brand
           t.textViewPrice.text = "₺ ${car.daily_price}"
-          t.textViewDepositFee.text = "${car.deposit_fee}"
+          t.textViewDepositFee.text = "₺ ${car.deposit_fee}"
           t.textViewFuel.text = "${car.fuel}"
           t.textViewGear.text = "${car.gear}"
-          t.textViewKMLimit.text = "${car.km_limit}"
+          t.textViewKMLimit.text = "${car.km_limit} KM"
           t.textViewSeat.text = "${car.seat}"
           t.textViewVehicleClass.text = car.vehicle_class
           t.textViewVehicleDeliveryMethod.text = car.vehicle_delivery_method
+
 
 
 

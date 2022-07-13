@@ -4,15 +4,21 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/arrow_right.xml" value="0.221" />
+        <entry key="app/src/main/res/drawable/filter.xml" value="0.22" />
         <entry key="app/src/main/res/drawable/fuel.xml" value="0.221" />
         <entry key="app/src/main/res/drawable/gear.xml" value="0.221" />
+        <entry key="app/src/main/res/drawable/ic_baseline_date_range_24.xml" value="0.22" />
         <entry key="app/src/main/res/drawable/ic_baseline_verified_24.xml" value="0.221" />
         <entry key="app/src/main/res/drawable/seat.xml" value="0.221" />
+        <entry key="app/src/main/res/drawable/star.xml" value="0.221" />
+        <entry key="app/src/main/res/drawable/star_half.xml" value="0.221" />
+        <entry key="app/src/main/res/drawable/tick.xml" value="0.221" />
         <entry key="app/src/main/res/drawable/vehicle_class.xml" value="0.221" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2953125" />
-        <entry key="app/src/main/res/layout/card_car.xml" value="0.23662109375" />
+        <entry key="app/src/main/res/layout/card_car.xml" value="0.2627105712890625" />
         <entry key="app/src/main/res/layout/fragment_anasayfa.xml" value="0.2953125" />
         <entry key="app/src/main/res/layout/fragment_detay.xml" value="0.28125" />
+        <entry key="app/src/main/res/layout/to_where_from_where.xml" value="0.33" />
       </map>
     </option>
   </component>

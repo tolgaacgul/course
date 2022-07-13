@@ -11,9 +11,10 @@
 
 
     <!-- Belirlediğim renkler-->
-    <color name="icon_text">#767682</color>
     <color name="text_car_title">#252B2C</color>
-    <color name="text_normal">#787C91</color>
+    <color name="text_normal">#8B8FA3</color>
     <color name="text_focus">#124597</color>
     <color name="rate_background">#0049D0</color>
+    <color name="background_of_card">#E6E6E6</color>
+    <color name="star">#F9CB60</color>
 </resources>
