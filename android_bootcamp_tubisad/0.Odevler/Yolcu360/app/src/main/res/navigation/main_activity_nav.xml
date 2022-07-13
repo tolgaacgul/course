@@ -8,7 +8,11 @@
         android:id="@+id/anasayfaFragment"
         android:name="com.acgul.yolcu360.AnasayfaFragment"
         android:label="fragment_anasayfa"
-        tools:layout="@layout/fragment_anasayfa" />
+        tools:layout="@layout/fragment_anasayfa" >
+        <action
+            android:id="@+id/action_anasayfaFragment_to_detayFragment"
+            app:destination="@id/detayFragment" />
+    </fragment>
     <fragment
         android:id="@+id/detayFragment"
         android:name="com.acgul.yolcu360.DetayFragment"

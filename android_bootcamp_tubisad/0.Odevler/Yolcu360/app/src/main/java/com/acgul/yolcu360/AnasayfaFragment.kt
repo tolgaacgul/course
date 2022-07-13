@@ -12,7 +12,7 @@ class AnasayfaFragment : Fragment() {
     private lateinit var tasarim:FragmentAnasayfaBinding
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         tasarim = FragmentAnasayfaBinding.inflate(inflater, container, false)
-        
+
         //tasarim.toolbarAnasayfa.title = "Araçlar"
         tasarim.rv.layoutManager = StaggeredGridLayoutManager(1,StaggeredGridLayoutManager.VERTICAL)
 
