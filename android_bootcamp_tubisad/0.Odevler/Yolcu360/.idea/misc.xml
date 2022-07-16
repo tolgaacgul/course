@@ -5,6 +5,7 @@
       <map>
         <entry key="../../../../../../../layout/custom_preview.xml" value="0.13189448441247004" />
         <entry key="app/src/main/res/drawable/arrow_right.xml" value="0.221" />
+        <entry key="app/src/main/res/drawable/date.xml" value="0.221" />
         <entry key="app/src/main/res/drawable/filter.xml" value="0.22" />
         <entry key="app/src/main/res/drawable/fuel.xml" value="0.221" />
         <entry key="app/src/main/res/drawable/gear.xml" value="0.221" />
@@ -17,7 +18,7 @@
         <entry key="app/src/main/res/drawable/vehicle_class.xml" value="0.221" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2953125" />
         <entry key="app/src/main/res/layout/card_car.xml" value="0.19173548771784854" />
-        <entry key="app/src/main/res/layout/card_to_where.xml" value="0.2953125" />
+        <entry key="app/src/main/res/layout/card_to_where.xml" value="0.39035797119140636" />
         <entry key="app/src/main/res/layout/fragment_anasayfa.xml" value="0.2953125" />
         <entry key="app/src/main/res/layout/fragment_detay.xml" value="0.28125" />
         <entry key="app/src/main/res/layout/to_where_from_where.xml" value="0.33" />

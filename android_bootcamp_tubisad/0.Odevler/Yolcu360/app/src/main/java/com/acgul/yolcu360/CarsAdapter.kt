@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.acgul.yolcu360.databinding.CardCarBinding
 import com.acgul.yolcu360.databinding.FragmentAnasayfaBinding
+import com.google.android.material.snackbar.Snackbar
 
 // List hem arraylisti hem de listi kapsar- parametre gönderirken arraylist göndercez
 class CarsAdapter(var mContext:Context, var carList:List<Cars>): RecyclerView.Adapter<CarsAdapter.CardTasarimTutucu>() {
@@ -39,17 +40,14 @@ class CarsAdapter(var mContext:Context, var carList:List<Cars>): RecyclerView.Ad
           t.textViewSeat.text = "${car.seat}"
           t.textViewVehicleClass.text = car.vehicle_class
           t.textViewVehicleDeliveryMethod.text = car.vehicle_delivery_method
-
-
-
-
+          
 
           t.cardViewCar.setOnClickListener{
 
           }
 
           t.btnRent.setOnClickListener{
-
+               Snackbar.make(it,"${car.brand} aracın detaylarına yönlendiriliyorsunuz...", Snackbar.LENGTH_SHORT).show()
           }
      }
 
