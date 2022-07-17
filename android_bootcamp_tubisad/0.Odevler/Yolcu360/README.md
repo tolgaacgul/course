@@ -3,5 +3,5 @@
 Recycler View ile oluşturulmuş bir tasarım içerir.
 
 ## Uygulama Ekran Görüntüsü
-![](/Screenshot_pixel2.png)
+![](Screenshot_pixel2.png)
 
