@@ -9,3 +9,5 @@ Hashset kafasına göre sıraya dizer
 4- XML içerisinde isek res klasörüne .@. İle erişilir. Eğer Kotlin klasörü içerisinden ise .R. ile eişilir.
 
 5- drawable ve drawable-v24 arasındaki fark -> drawable-v24 api 24 ve sonrası için geçerlidir.
+
+6- BackStack -> Sayfalar arası geçiş yaparken geri tuşuna basıp geri dönme işlemine bacstack denir
