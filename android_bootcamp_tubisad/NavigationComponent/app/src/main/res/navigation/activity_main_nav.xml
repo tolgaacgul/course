@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_nav"
+    app:startDestination="@id/anasayfaFragment">
+
+    <fragment
+        android:id="@+id/anasayfaFragment"
+        android:name="com.acgul.navigationcomponent.AnasayfaFragment"
+        android:label="fragment_anasayfa"
+        tools:layout="@layout/fragment_anasayfa" >
+        <action
+            android:id="@+id/action_anasayfaFragment_to_oyunEkraniFragment"
+            app:destination="@id/oyunEkraniFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/oyunEkraniFragment"
+        android:name="com.acgul.navigationcomponent.OyunEkraniFragment"
+        android:label="fragment_oyun_ekrani"
+        tools:layout="@layout/fragment_oyun_ekrani" >
+        <action
+            android:id="@+id/action_oyunEkraniFragment_to_sonucEkraniFragment3"
+            app:destination="@id/sonucEkraniFragment3"
+            app:popUpTo="@id/oyunEkraniFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="isim"
+            app:argType="string"
+            android:defaultValue="isimsiz" />
+        <argument
+            android:name="nesneKisiler"
+            app:argType="com.acgul.navigationcomponent.model.Kisiler" />
+    </fragment>
+    <fragment
+        android:id="@+id/sonucEkraniFragment3"
+        android:name="com.acgul.navigationcomponent.SonucEkraniFragment"
+        android:label="fragment_sonuc_ekrani"
+        tools:layout="@layout/fragment_sonuc_ekrani" />
+</navigation>
