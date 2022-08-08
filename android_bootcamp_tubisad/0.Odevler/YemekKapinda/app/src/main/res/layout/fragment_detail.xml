@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="toolbarBaslik" type="String" />
+        <variable name="product" type="com.acgul.yemekkapinda.data.model.Products" />
+        <variable name="productObj" type="com.acgul.yemekkapinda.data.model.Products" />
+        <variable name="detailFragment" type="com.acgul.yemekkapinda.ui.fragment.DetailFragment" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragment.DetailFragment">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarDetail"
+            app:title="@{productObj.name}"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/pizza_resim"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarDetail" />
+
+        <TextView
+            android:id="@+id/textViewProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@{product.name}"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <Button
+            android:id="@+id/buttonNegative"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="-"
+            android:onClick="@{() -> detailFragment.fncNegative(textViewCount.getText().toString())}"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewCount"
+            app:layout_constraintEnd_toStartOf="@+id/textViewCount"
+            app:layout_constraintTop_toTopOf="@+id/textViewCount" />
+
+        <Button
+            android:id="@+id/buttonPositive"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="+"
+            android:onClick="@{() -> detailFragment.fncPositive(textViewCount.getText().toString())}"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewCount"
+            app:layout_constraintStart_toEndOf="@+id/textViewCount"
+            app:layout_constraintTop_toTopOf="@+id/textViewCount" />
+
+        <TextView
+            android:id="@+id/textViewCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="0"
+            app:layout_constraintBottom_toTopOf="@+id/buttonBasket"
+            app:layout_constraintEnd_toEndOf="@+id/textViewProduct"
+            app:layout_constraintStart_toStartOf="@+id/textViewProduct" />
+
+        <Button
+            android:id="@+id/buttonBasket"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            android:text="Sepetle"
+            android:onClick="@{() -> detailFragment.fncAddToBasket(textViewProduct.getText().toString(), textViewCount.getText().toString())}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonNegative" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:text="Pizzamızda sucuk, mantar, mısır, zeytin ve peynir bulunmaktadır"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewProduct" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

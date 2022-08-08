@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="product" type="com.acgul.yemekkapinda.data.model.Products" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/buttonNgtv"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:padding="0dp"
+                    android:text="-"
+                    app:layout_constraintBottom_toBottomOf="@+id/textViewCnt"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewCnt"
+                    app:layout_constraintTop_toTopOf="@+id/textViewCnt" />
+
+                <Button
+                    android:id="@+id/buttonPstv"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="8dp"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:padding="0dp"
+                    android:text="+"
+                    app:layout_constraintBottom_toBottomOf="@+id/textViewCnt"
+                    app:layout_constraintStart_toEndOf="@+id/textViewCnt"
+                    app:layout_constraintTop_toTopOf="@+id/textViewCnt" />
+
+                <TextView
+                    android:id="@+id/textViewCnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="0"
+                    android:textColor="@color/teal_700"
+                    app:layout_constraintEnd_toEndOf="@+id/imageViewProduct"
+                    app:layout_constraintStart_toStartOf="@+id/imageViewProduct"
+                    app:layout_constraintTop_toBottomOf="@+id/imageViewProduct" />
+
+                <ImageView
+                    android:id="@+id/imageViewProduct"
+                    android:layout_width="159dp"
+                    android:layout_height="168dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.502"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewName"
+                    app:srcCompat="@drawable/pizza_resim" />
+
+                <TextView
+                    android:id="@+id/textViewName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Pizza"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/imageViewProduct"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageViewAddToBasket"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="16dp"
+                    android:tint="@color/teal_700"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/buttonAddAndGoBasket"
+                    app:layout_constraintStart_toStartOf="@+id/imageViewProduct"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewCnt"
+                    app:srcCompat="@drawable/add_product" />
+
+                <Button
+                    android:id="@+id/buttonAddAndGoBasket"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="0dp"
+                    android:layout_marginStart="4dp"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:padding="0dp"
+                    android:text="Ekle ve Sepete Git"
+                    android:textSize="8sp"
+                    app:iconPadding="0dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageViewAddToBasket"
+                    app:layout_constraintEnd_toEndOf="@+id/imageViewProduct"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewAddToBasket"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewAddToBasket" />
+
+                <ImageView
+                    android:id="@+id/imageViewMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/more_horizantal" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
